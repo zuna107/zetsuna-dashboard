@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Genshin Impact SEA",
+    "iconSrc": "icon/sea.png",
+    "imageSrc": "skills/SEA.jpeg",
+    "link": "https://discord.gg/genshinimpactsea",
+    "description": "Step into vast magical world for adventure, Welcome to the Official Gesnhin Impact SEA (Southeast Asia) Community Server."
+  },
+  {
+    "title": "HoYoLAB",
+    "iconSrc": "icon/hyl.png",
+    "description": "HoYoLAB is a community forum, featuring official information on our popular games, a variety of fan art, useful tools, exclusive perks, player anecdotes, and more.",
+    "imageSrc": "skills/hoyolab.jpeg",
+    "link": "https://www.hoyolab.com/accountCenter/postList?id=107593323"
+  },
+  {
+    "title": "Lab ID Corner",
+    "iconSrc": "icon/labidc.png",
+    "description": "This server is a Community (Unofficial) server developed by HoYoLAB Indonesia users.",
+    "imageSrc": "skills/LAB ID Corner.png",
+    "link": "https://discord.gg/e9GBZhad3Z"
+  },
+  {
+    "title": "GI Wiki Fandom",
+    "iconSrc": "icon/wfndm.png",
+    "description": "Step into vast magical world for adventure, Welcome to the Genshin Impact Wiki Fandom!",
+    "imageSrc": "skills/Wiki.png",
+    "link": "https://genshin-impact.fandom.com/wiki/User:SunaOwO"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "organisation": "Lab ID Corner",
+    "startDate": "Role:",
+    "experiences": ["Mod", "Bot Assistant"],
+    "imageSrc": "history/google.png"
+  },
+  {
+    "organisation": "HoYoLAB",
+    "startDate": "Role:",
+    "experiences": ["Guide Creator"],
+    "imageSrc": "history/microsoft.png"
+  },
+  {
+    "organisation": "Genshin Impact SEA",
+    "startDate": "Role:",
+    "experiences": [
+      "can't be seen"
+    ],
+    "imageSrc": "history/netflix.png"
+  }
+]

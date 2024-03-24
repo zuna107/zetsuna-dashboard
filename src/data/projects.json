@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Mimo",
+    "imageSrc": "projects/banner.gif",
+    "badges": [
+      {"image": "projects/badge3.png", "tooltip": "Support Commands"},
+      {"image": "projects/badges.png", "tooltip": "Uses AutoMod"}
+      
+    ],    
+    "logo": "projects/logo.png",
+    "description": "Mimo#1234",
+    "aboutMe": "Playing with LAB ID Server!",
+    "memberSince": "Sep 10, 2023",
+    "roles": [
+      {"name": "BOTS", "color": "lightyellow"},
+      {"name": "Mimo", "color": "darkred"}
+    ]
+  }
+]

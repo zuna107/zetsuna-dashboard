@@ -1,0 +1,159 @@
+/* Navbar.module.css */
+
+@import "../../vars.css";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58px;
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  transition: background 0.6s, backdrop-filter 0.6s, -webkit-backdrop-filter 0.6s;
+  
+}
+
+.title {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menuBtn {
+  display: none; /* Sembunyikan tombol menu pada mode desktop */
+}
+
+.menuItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menuItems li {
+  margin-right: 20px;
+}
+
+.menuItems a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold; /* Teks lebih tebal */
+  transition: color 0.3s;
+}
+
+.menuItems a:hover {
+  color: #7bb1ff; /* Warna biru saat hover */
+}
+
+.menuBtnWrapper {
+  display: none;
+}
+
+/* Tampilkan tombol menu pada mode mobile */
+@media screen and (max-width: 830px) {
+  .menuBtnWrapper {
+    display: block;
+  }
+
+  .menuItems {
+    display: none;
+  }
+
+  .menuOpen {
+    transform: translateX(0);
+  }
+
+  /* Tampilkan tombol menu */
+  .menuBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .menuBtn span {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s;
+  }
+
+  .menuBtn:hover span {
+    background-color: #ccc;
+  }
+
+  /* Tampilkan menu slide dari bawah navbar */
+  .menu {
+    position: fixed;
+    top: 58px; /* Geser menu ke bawah navbar */
+    right: 0;
+    width: 100%; /* Mengisi lebar layar penuh */
+    max-width: 300px; /* Atur lebar maksimum */
+    height: calc(100% - 58px); /* Sesuaikan tinggi menu */
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px); /* Tambahkan efek blur */
+    -webkit-backdrop-filter: blur(5px); /* Tambahkan efek blur untuk Safari */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    z-index: 99;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .menuOpen {
+    transform: translateX(0);
+  }
+
+  .menuItems {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 20px; /* Tambahkan margin kiri untuk menggeser ke kanan */
+  }
+
+  .menuItems li {
+    margin: 20px 0;
+  }
+
+  .menuItems a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold; /* Teks lebih tebal */
+    transition: color 0.3s;
+  }
+
+  .menuItems a:hover {
+    color: #7bb1ff; /* Warna biru saat hover */
+  }
+}
+
+/* Ubah ukuran font pada mode mobile */
+@media screen and (max-width: 830px) {
+  .title {
+    font-size: 14px;
+  }
+
+  /* Tampilkan daftar menu pada mode mobile */
+  .menuItems {
+    display: flex;
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+}
