@@ -11,6 +11,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: 170px; /* Ubah nilai margin-top sesuai kebutuhan */
+  z-index: 2; /* Atur z-index agar lebih tinggi dari gelombang */
 }
 
 
@@ -80,13 +81,14 @@
 }
 
 .wave {
-  position: absolute;
+  position: absolute; /* Ubah position menjadi fixed */
   top: -80px;
   left: 0;
   width: 100%;
   height: 100px;
   background: url("https://i.ibb.co/wQZVxxk/wave.png");
   background-size: 1000px 100px;
+  z-index: 1; /* Atur z-index agar lebih rendah dari navbar */
 }
 
 .wave1 {
