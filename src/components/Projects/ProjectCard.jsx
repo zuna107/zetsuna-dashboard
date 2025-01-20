@@ -23,7 +23,7 @@ const handleMessageSend = async () => {
 
     // Kirim pesan ke Discord webhook
     const response = await axios.post(
-      "https://discord.com/api/webhooks/1221401653878456330/DvmRBLVc_Na5Ti3i9ht9HGUExc4zgT0AUwIRkt9q2DT3c4jrW8gK8XPtcc1_vuI9t4ns",
+      "WEBHOOK_API",
       { content }
     );
     console.log(response.data);
